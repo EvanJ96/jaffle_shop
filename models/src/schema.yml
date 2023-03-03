@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: src_customers
+    description: This model is the source data model. No transformation happens here.
+
+    columns:
+      - name: ID
+        description: Primary key for the model. Generated in the source system.
+        tests:
+          - unique
+          - not_null
+      - name: FIRST_NAME
+        description: First name of the customer.
+      - name: LAST_NAME
+        description: Last name of the customer.

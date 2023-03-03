@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: my_cool_pbi_dashboard 
+    description: some cool dashboard I made for my manager
+    type: dashboard 
+    url: www.urltomydashboard.com.au
+    maturity: high
+    owner:
+      name: Evan J 
+      email: evan.jasiewicz@somedomain.com
+    
+    depends_on:
+      - ref('fact_customers')
+      
+    label: Customer Segmentation
